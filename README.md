@@ -1,13 +1,41 @@
-# circRNA regulation in non-small cell lung cancer
+# circRNA–miRNA–mRNA regulation in non-small cell lung cancer
 
-I started this bioinformatics study the summer after my freshman year of high
-school. The project examined the proposed circFNDC3B–miR-885-3p–MCM5 regulatory
-axis in non-small cell lung cancer, using CircNet, GEPIA2, TCGA data, and GSVA.
+This repository accompanies my paper, **[Unraveling a CircRNA–miRNA–mRNA Axis:
+A Potential Therapeutic Target for Non-small Cell Lung Cancer](archive/paper/Research_Paper.pdf)**.
+I began the study the summer after my freshman year of high school. It examines
+the proposed **circFNDC3B–miR-885-3p–MCM5** axis and its relationship to NSCLC.
 
-This repository brings together my paper, presentation, original R scripts, and
-saved results. It also includes a newer Python analysis that checks the saved
-data and reproduces the reported correlation. The original study is complete;
-reproducing every step from the raw data is still in progress.
+[Paper](archive/paper/Research_Paper.pdf) ·
+[Research presentation](archive/paper/Research_Presentation.pdf) ·
+[Manuscript listing student and mentor](archive/paper/Patel_Subramanian.pdf)
+
+## Research question
+
+Could a circRNA–miRNA–mRNA regulatory axis help identify a potential therapeutic
+target in NSCLC? The paper follows circFNDC3B, miR-885-3p, and the target gene MCM5,
+then examines pathways associated with MCM5 expression.
+
+## Approach and findings in the paper
+
+CircNet was used to identify candidate interactions. GEPIA2 analyses examined
+survival associations in LUAD and LUSC, while TCGA lung expression data and GSVA
+were used to investigate target-gene and pathway enrichment. Samples were also
+compared by high and low MCM5 expression.
+
+The paper reports a negative association between the inferred miR-885-3p activity
+and MCM5 (r = −0.281), alongside survival associations and differences involving
+Ras protein signal transduction and IGF transport and uptake by IGF-binding
+proteins. These computational findings support a candidate axis for further study;
+they do not establish a causal mechanism or a validated treatment target.
+
+## What is included here
+
+The original paper, presentation, R scripts, gene sets, and saved outputs are in
+`archive/` and `data/source/`. A newer Python analysis checks sample matching,
+reproduces the saved-output correlation, and reexamines the available pathway
+scores. The original study is complete; reproducing every step from raw data is
+still in progress. The [reproduction notes](docs/REPRODUCTION_STATUS.md) distinguish
+results reported in the paper from results rerun in this repository.
 
 ## Start here
 
