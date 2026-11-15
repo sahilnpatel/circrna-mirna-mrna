@@ -1,0 +1,28 @@
+{
+  "n_samples": 1129,
+  "n_primary_tumors": 1017,
+  "sample_type_counts": {
+    "01": 1017,
+    "11": 110,
+    "02": 2
+  },
+  "n_saved_pathways": 11,
+  "pearson_r_all_samples": -0.2809100973771341,
+  "pearson_r_primary_tumors": -0.2488497681112945,
+  "paper_reported_r": -0.281,
+  "legacy_rows": 1000,
+  "legacy_r": 0.027638468254185623,
+  "legacy_mir_matches_original_order": 1000,
+  "legacy_mcm_matches_independently_sorted_values": 1000,
+  "sources_sha256": {
+    "mcm5.tsv": "a5b91f9c43011b4b629789399e3cc25c1ad33b5010271b8003cf16e92ee1405f",
+    "mir885_targets.tsv": "ac41f9824cb3ff4149808dcb7b924d9c0a73aad7a588d07b072c45289eddcb36",
+    "pathways.tsv": "28628de68c25922a02591e09c4e7591a0ae6dfa53fe24c86afa15f3e810b0922"
+  },
+  "warnings": [
+    "miRNA activity is a negated target-gene score, not measured miRNA.",
+    "MCM5 is itself included in the 74-gene target signature: circularity risk.",
+    "LUAD/LUSC clinical subtype and survival metadata are not supplied.",
+    "Original GSVA execution and survival results have not been reproduced."
+  ]
+}

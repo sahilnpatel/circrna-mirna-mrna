@@ -1,0 +1,7 @@
+{
+  "median_mcm5_cutoff": 10.6493,
+  "cohort": "primary tumors",
+  "test": "Welch t-test; Benjamini-Hochberg correction over 11 available saved pathways",
+  "tie_rule": "MCM5 > median is high; ties enter low",
+  "interpretation": "Association only; signatures can overlap and include MCM5. Not an exact reproduction of the paper."
+}
