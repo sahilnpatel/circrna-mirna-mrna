@@ -2,14 +2,14 @@
 
 Tested with Python 3.12, NumPy 2.2.1, SciPy 1.18.1, scikit-learn 1.6.1,
 and pytest 8.3.4. `requirements.txt` pins this executed environment. A fresh
-installation was not tested because this workstation could not reach PyPI.
+installation subsequently passed in GitHub Actions on Linux; this workstation
+could not reach PyPI. See `VALIDATION.md` for the verified run.
 
 On macOS Accelerate, set `VECLIB_MAXIMUM_THREADS=1` before Python starts.
 The local Accelerate/NumPy combination emits floating-point warnings during some
 large matrix operations, even with this setting. The tests pass, outputs remain
-finite, and independent distance/inertia/PCA checks are included. Treat the current
-figures as provisional until cross-platform reproduction resolves these warnings;
-no claim of a warning-free numerical run is made.
+finite, and independent distance/inertia/PCA checks are included. The separate Linux workflow subsequently completed successfully. The local warnings
+remain documented; exact cross-platform numerical equivalence has not been established.
 
 ```bash
 python3 -m venv .venv
