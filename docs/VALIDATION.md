@@ -13,4 +13,4 @@ cross-platform reproduction. The R/GSVA rerun has not been executed.
 
 ## Independent Linux reproduction
 
-GitHub Actions run https://github.com/sahilnpatel/nsclc-circrna-analysis/actions/runs/43683057794 succeeded on November 15, 2026. Fresh dependency installation, all three tests, the source audit, and the descriptive reanalysis completed successfully. The run saved a reproduced-results artifact. This does not include the unexecuted R/GSVA or historical web-based analyses.
+GitHub Actions run https://github.com/sahilnpatel/circrna-mirna-mrna/actions/runs/43683057794 succeeded on November 15, 2026. Fresh dependency installation, all three tests, the source audit, and the descriptive reanalysis completed successfully. The run saved a reproduced-results artifact. This does not include the unexecuted R/GSVA or historical web-based analyses.

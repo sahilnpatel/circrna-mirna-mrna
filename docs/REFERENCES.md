@@ -1,7 +1,11 @@
 # References and data sources
 
-- Original study: supplied PDFs in `archive/paper`; publication identifier recorded
-  in prior project materials: DOI 10.36838/IJHSR810.1 (verify against final publication).
+- Sahil Patel. *Unraveling a CircRNA–miRNA–mRNA Axis: A Potential Therapeutic Target
+  for Non-small Cell Lung Cancer.* [Supplied paper](../archive/paper/Research_Paper.pdf).
+  The [student/mentor manuscript](../archive/paper/Patel_Subramanian.pdf) lists
+  Sahil Patel (student) and Madhav Subramanian (mentor). Publication identifier
+  recorded in prior project materials: DOI 10.36838/IJHSR810.1
+  (not independently verified against the final publication).
 - TCGA/GDC barcode definitions: https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/
 - UCSC Xena: https://xenabrowser.net/datapages/ . Historical local matrix:
   `TCGA.LUNG.sampleMap_HiSeqV2.txt`; the exact historical download URL/date was not saved.
