@@ -61,6 +61,19 @@ Blue: primary tumor. Orange: normal tissue. Green: recurrent tumor.
 
 ## Run
 
+Use Python 3.12. From a terminal:
+
+```bash
+git clone https://github.com/sahilnpatel/circrna-mirna-mrna.git
+cd circrna-mirna-mrna
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+On Windows, activate with `.venv\Scripts\activate` instead. See
+[environment notes](docs/ENVIRONMENT.md) for the tested versions and macOS settings.
+
 The source audit needs only Python's standard library:
 
 ```bash
@@ -84,6 +97,19 @@ The R script is prepared but has not been run. It uses `gsvaParam` and records
 gene-set coverage and package versions. It also recomputes the target signature
 without MCM5, an important follow-up check. The original GSVA package versions
 and browser-based GEPIA2 survival analyses have not been reproduced.
+
+## Reproducing the saved analyses
+
+`audit.py` joins the original exports by sample ID and writes the aligned tables
+and an audit report. `analyze_saved_outputs.py` calculates correlations for the
+full cohort and primary tumors separately. It then divides primary tumors at the
+median MCM5 value and compares 11 saved pathway scores using Welch tests with
+Benjamini–Hochberg correction.
+
+These pathway comparisons are a new descriptive reanalysis. They are not a full
+reproduction of the paper's 22-gene-set analysis or its GEPIA2 survival plots.
+Tables, figures, and machine-readable summaries are written to `results/`.
+The [validation record](docs/VALIDATION.md) links to the successful GitHub run.
 
 ## Files
 
